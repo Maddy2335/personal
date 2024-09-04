@@ -1,0 +1,268 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background: linear-gradient(to right, #e0f7fa, #00796b);
+}
+
+header {
+    background: #004d40;
+    color: #ffffff;
+    padding: 2rem;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 3.2rem;
+    letter-spacing: 2px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 1rem 0;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 1.5rem;
+}
+
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.2rem;
+    transition: color 0.3s, transform 0.3s;
+}
+
+nav ul li a:hover {
+    color: #ffeb3b;
+    transform: scale(1.1);
+}
+
+main {
+    padding: 3rem 1.5rem;
+    color: #ffffff;
+}
+
+section {
+    margin-bottom: 3rem;
+    padding: 2rem;
+    background: rgba(0, 0, 0, 0.7);
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+    position: relative;
+    overflow: hidden;
+}
+
+section:hover {
+    background: rgba(0, 0, 0, 0.9);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.6);
+}
+
+section h2 {
+    color: #ffeb3b;
+    font-size: 2.2rem;
+    border-bottom: 3px solid #ffeb3b;
+    padding-bottom: 0.5rem;
+    margin-bottom: 1rem;
+    position: relative;
+}
+
+section h2::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 50%;
+    height: 3px;
+    background: #ffeb3b;
+    transform: translateY(5px);
+    transition: width 0.3s;
+}
+
+section:hover h2::after {
+    width: 100%;
+}
+
+#about {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+#about .text {
+    flex: 1;
+    margin-right: 2rem;
+}
+
+#about .profile-pic {
+    flex: 0 0 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#about .profile-pic img {
+    border-radius: 12px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    width: 100%;
+    max-width: 200px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+#about .profile-pic img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+}
+
+.project {
+    margin-bottom: 1.5rem;
+}
+
+#certifications {
+    background: rgba(0, 0, 0, 0.7);
+    border-radius: 10px;
+    padding: 2rem;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+    transition: background 0.3s, box-shadow 0.3s;
+    position: relative;
+    overflow: hidden;
+}
+
+#certifications:hover {
+    background: rgba(0, 0, 0, 0.9);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.6);
+}
+
+#certifications h2 {
+    color: #ffeb3b;
+    font-size: 2rem;
+    border-bottom: 3px solid #ffeb3b;
+    padding-bottom: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+#certifications ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#certifications ul li {
+    margin-bottom: 1rem;
+    color: #ffffff;
+    font-size: 1rem;
+}
+
+#certifications a {
+    color: #ffeb3b;
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-block;
+    margin-top: 0.5rem;
+    transition: color 0.3s, text-shadow 0.3s;
+}
+
+#certifications a:hover {
+    color: #ffffff;
+    text-shadow: 0 0 5px rgba(255, 255, 255, 0.7);
+    transform: scale(1.05);
+}
+
+#contact {
+    background: rgba(0, 0, 0, 0.7);
+    border-radius: 10px;
+    padding: 2rem;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+    transition: background 0.3s, box-shadow 0.3s;
+    position: relative;
+    overflow: hidden;
+}
+
+#contact:hover {
+    background: rgba(0, 0, 0, 0.9);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.6);
+}
+
+#contact h2 {
+    color: #ffeb3b;
+    font-size: 2rem;
+    border-bottom: 3px solid #ffeb3b;
+    padding-bottom: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+#contact p {
+    color: #ffffff;
+    font-size: 1.2rem;
+}
+
+#contact a {
+    color: #ffeb3b;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s, text-shadow 0.3s;
+}
+
+#contact a:hover {
+    color: #ffffff;
+    text-shadow: 0 0 5px rgba(255, 255, 255, 0.7);
+    transform: scale(1.05);
+}
+
+
+ul {
+    padding-left: 1.5rem;
+}
+
+footer {
+    background: #004d40;
+    color: #ffffff;
+    text-align: center;
+    padding: 1.5rem;
+    box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.4);
+}
+
+footer p {
+    margin: 0;
+    font-size: 1rem;
+}
+
+@media (max-width: 768px) {
+    nav ul li {
+        display: block;
+        margin: 0.5rem 0;
+    }
+
+    header h1 {
+        font-size: 2.5rem;
+    }
+
+    section h2 {
+        font-size: 1.5rem;
+    }
+
+    #about {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    #about .text {
+        margin: 0;
+        margin-bottom: 1rem;
+    }
+
+    #about .profile-pic {
+        margin: 0;
+    }
+
+    .profile-pic img {
+        max-width: 100%;
+    }
+}
